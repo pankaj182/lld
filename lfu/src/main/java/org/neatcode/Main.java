@@ -2,33 +2,33 @@ package org.neatcode;
 
 public class Main {
     public static void main(String[] args) {
-        LFU<String, Integer> lfuCache = new LFUImpl<>(3);
-        lfuCache.put("A", 1);
-        lfuCache.peekFrequency();
+        Cache<String, Integer> cacheCache = new LFUCache<>(3);
+        cacheCache.put("A", 1);
+        cacheCache.peekFrequency();
 
-        lfuCache.put("A", 1);
-        lfuCache.peekFrequency();
+        cacheCache.put("A", 1);
+        cacheCache.peekFrequency();
 
-        lfuCache.put("B", 2);
-        lfuCache.peekFrequency();
+        cacheCache.put("B", 2);
+        cacheCache.peekFrequency();
 
-        lfuCache.put("C", 3);
-        lfuCache.peekFrequency();
+        cacheCache.put("C", 3);
+        cacheCache.peekFrequency();
 
-        System.out.println(lfuCache.get("C"));
-        lfuCache.peekFrequency();
+        System.out.println(cacheCache.get("C"));
+        cacheCache.peekFrequency();
 
-        lfuCache.put("A", 11);
-        lfuCache.peekFrequency();
+        cacheCache.put("A", 11);
+        cacheCache.peekFrequency();
 
-        lfuCache.put("D", 4);
-        lfuCache.peekFrequency();
+        cacheCache.put("D", 4);
+        cacheCache.peekFrequency();
 
-        lfuCache.put("E", 5);
-        lfuCache.peekFrequency();
+        cacheCache.put("E", 5);
+        cacheCache.peekFrequency();
 
-        System.out.println(lfuCache.get("A"));
-        lfuCache.peekFrequency();
+        System.out.println(cacheCache.get("A"));
+        cacheCache.peekFrequency();
     }
 
     /*

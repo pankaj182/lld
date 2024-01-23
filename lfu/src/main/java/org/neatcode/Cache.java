@@ -2,7 +2,7 @@ package org.neatcode;
 
 import java.util.Optional;
 
-public interface LFU<K, V> {
+public interface Cache<K, V> {
     Optional<V> get(K key);
 
     void put(K key, V val);

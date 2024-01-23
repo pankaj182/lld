@@ -5,14 +5,14 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.PriorityQueue;
 
-public class LFUImpl<K,V> implements LFU<K,V> {
+public class LFUCache<K,V> implements Cache<K,V> {
 
     private final int capacity;
     private final Map<K, Integer> frequency;
     private final Map<K, V> storage;
     private final PriorityQueue<K> priorityQueue;
 
-    public LFUImpl(int capacity) {
+    public LFUCache(int capacity) {
         this.capacity = capacity;
         this.frequency = new HashMap<>();
         this.storage = new HashMap<>();
