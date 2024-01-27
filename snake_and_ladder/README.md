@@ -1,0 +1,22 @@
+### Requirements
+- Board
+  - Board 10*10 (default) but configurable
+  - #snakes & #ladders configurable
+  - Snakes and ladders position configurable
+  - snakes & ladders position should not form loop
+  - at-most one snake head on one block
+  - at-most one ladder foot on one block
+  - No Snake's head on target position(default = 100 for 10*10 board)
+- Dice
+  - Random output
+  - #dice configurable
+- Players
+  - #players configurable
+  - Basic Player Profile -> #wins, #matches played etc
+- Game Play
+  - Play shall continue till #players >= 2
+  - Once a player reaches target, they will be out of game play
+  - All players start at same initial position
+  - Dice roll allowed only once
+- Ranking
+  - Declare Ranking after the Game
