@@ -1,0 +1,33 @@
+### Functional Requirements
+- Vehicle
+  - Different Vehicles: cars, bikes, and handicapped vehicles.
+- Parking Spot
+  - Normal
+  - Accessible Parking
+- Tracking
+  - Tickets
+- Pricing Strategy
+  - for different vehicles
+  - short term
+  - long term
+- Parking
+  - check availability of parking slots for each type of vehicle
+  - make the parked slot unavailable
+  - count of parked vehicles
+  - count of slots available for each type of vehicles
+  - make slot available after removing vehicle
+
+### Non Functional Requirements
+- extendable
+  - new type of vehicles can be added 
+  - new parking slots can be added
+  - easy to update pricing strategy
+- maintainable
+- modular - encapsulated
+- high cohesion, low coupling
+- separation of concerns
+- efficiency
+- security
+- logging
+- exception handling
+- testable
