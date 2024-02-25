@@ -1,4 +1,7 @@
-package org.neatcode;
+package org.neatcode.commands;
+
+import org.neatcode.Document;
+import org.neatcode.commands.Command;
 
 public class MoveCursorCommand implements Command {
     private Document document;

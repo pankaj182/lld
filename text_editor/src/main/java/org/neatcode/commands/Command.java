@@ -1,4 +1,4 @@
-package org.neatcode;
+package org.neatcode.commands;
 
 public interface Command {
     void execute();

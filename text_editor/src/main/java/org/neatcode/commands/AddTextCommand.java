@@ -1,4 +1,6 @@
-package org.neatcode;
+package org.neatcode.commands;
+
+import org.neatcode.Document;
 
 public class AddTextCommand implements Command {
     private Document document;
